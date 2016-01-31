@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_sms_row"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/new_sms_date"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/textColorPrimary"/>
+
+    <View
+        android:id="@+id/devider_1"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/new_sms_date"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/new_sms_description"
+        android:layout_toRightOf="@+id/devider_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"/>
+
+    <TextView
+        android:id="@+id/new_sms_vendor"
+        android:layout_below="@+id/new_sms_description"
+        android:layout_toRightOf="@+id/devider_1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:text="Vendor from the west"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/new_sms_amount"
+        android:layout_below="@+id/new_sms_description"
+        android:layout_alignRight="@+id/new_sms_description"
+        android:layout_toRightOf="@+id/new_sms_vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:text="R 1000"
+        android:textColor="@color/colorAccent"/>
+
+    <View
+        android:id="@+id/devider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/new_sms_vendor"
+        android:background="@color/textColorSecondary"/>
+</RelativeLayout>
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/sms_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>-->
